@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Exercise: Advanced CSS Selectors</title>
+
+</head>
+
+<body>
+
+<div class="wrapper">
+    <header>
+        <h1>Advanced CSS Selectors</h1>
+    </header>
+
+    <main>
+
+        <section class="examples">
+            <section class="attribute">
+                <h2>Attribute Selectors</h2>
+                <ul>
+                    <li><a href="http://www.uc.edu">External link </a></li>
+                    <li><a href="mailto:joe_momma@example.com"> E-mail link</a></li>
+                    <li><a href="css_quickref.pdf">Link to a file </a></li>
+                </ul>
+            </section>
+
+            <section class="pseudo">
+
+                <h2>Pseudo Classes</h2>
+                <ul>
+                    <li>First item</li>
+                    <li>Second item</li>
+                    <li>Third item</li>
+                </ul>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum porta tortor, eget iaculis est. Morbi sit amet est pretium, dictum quam quis, dapibus purus. Aenean bibendum felis luctus risus auctor, sed posuere neque malesuada. </p>
+
+                <p>Nulla rhoncus tortor eget metus consequat molestie. Sed rutrum velit eget ornare tincidunt. In hac habitasse platea dictumst. Curabitur tempus leo vitae rhoncus commodo. Maecenas odio sapien, ullamcorper a sollicitudin quis, molestie vel eros.</p>
+            </section>
+
+        </section>
+
+        <h2>More Advanced Selectors</h2>
+
+        <section class="more">
+
+            <section>
+                <p>Maiores fuga neque, porro sit labore iure voluptates! Animi, aperiam consequuntur officia numquam blanditiis facilis? Voluptatibus et illum earum officia rerum quaerat ipsa cupiditate, esse doloremque beatae repellat atque magnam?</p>
+            </section>
+
+            <section>
+                <img src="stock02.png" alt="Mysterious stock photo">
+            </section>
+
+            <section>
+                <p>Nobis molestias, praesentium pariatur itaque, numquam recusandae illum mollitia aspernatur repudiandae nisi quas illo ab assumenda incidunt cumque soluta corporis quisquam? Nisi illum necessitatibus aut quisquam earum corporis assumenda itaque</p>.
+            </section>
+
+        </section>
+
+        </main>
+
+        <aside class="syntax">
+            <h2>Attribute Selector Syntax</h2>
+
+            <dl>
+                <dt><code>element<strong>[attr="value"]</strong></code></dt>
+                <dd>Select an element that has this attribute</dd>
+
+                <dt><code>element[attr<strong>^</strong>="value"]</code></dt>
+                <dd>Select an element based on how the attribute <strong>begins</strong></dd>
+
+                <dt><code>element[attr<strong>$</strong>="value"]</code></dt>
+                <dd>Select an element based on how the atrtibute <strong>ends</strong></dd>
+
+                <dt><code>element[attr<strong>*</strong>="value"]</code></dt>
+                <dd>Select an element if the attribute contains this value <strong>anywhere</strong></dd>
+
+                <h2>Pseudo Element Syntax</h2>
+                <dt><code>element<strong>::before</strong></code></dt>
+                <dd>Put something to the left of an element</dd>
+
+                <dt><code>element<strong>::after</strong></code></dt>
+                <dd>Put something to the right of element</dd>
+
+                <dt><code>element<strong>::first-letter</strong></code></dt>
+                <dd>Select only the first letter of an element</dd>
+
+                <dt><code>element<strong>::first-line</strong></code></dt>
+                <dd>Select only the first line of text</dd>
+
+                <h2>Pseudo Class Syntax</h2>
+
+                <dt><code>element<strong>:hover</strong></code></dt>
+                <dd>Only select an element while the mouse is hovering over it</dd>
+
+                <dt><code>element<strong>:first-of-type</strong></code></dt>
+                <dd>Select only the first of a kind of element</dd>
+
+                <dt><code>element<strong>:last-of-type</strong></code></dt>
+                <dd>Select only the last of a kind of element</dd>
+
+                <dt><code>element<strong>:nth-child()</strong></code></dt>
+                <dd>Selects sibling child elements based on what's inside the (). Can include keywords like odd or a specific number</dd>
+
+                <dt><code>element<strong>:is()</strong></code></dt>
+                <dd>Selects any element that matches any of the selectors listed in the (). The list is forgiving.</dd>
+                
+                <dt><code>element<strong>:not()</strong></code></dt>
+                <dd>The negation, or matches-none, pseudo-class selects any element that is NOT represented in the ().</dd>
+
+                <dt><code>element<strong>:has()</strong></code></dt>
+                <dd>Selects an element if any of the child elements inside it contain what is inside the ().</dd>
+
+            </dl>
+        </aside>
+    </div>
+
+</body>
+</html>
